@@ -1,0 +1,12 @@
+<h1 class="title">{{headerService.title}}</h1>
+<nav>
+    <div class="nav-parent">
+        <!-- <a class="navbar-brand">Angular Router</a> -->
+        <ul class="row" routerLinkActive="active">
+            <li class="column"><a><img class="logo" src="../../assets/amazonLogo.png"></a></li>
+            <li class="column"><a (click)="headerService.title='welcome to the first page'" routerLink="pageOne">First page</a></li>
+            <li class="column"><a (click)="headerService.title='welcome to the second page'" routerLink="pageTwo">Second page</a></li>
+            <li class="column"><a (click)="headerService.title='welcome to the Third page'" routerLink="pageThree">Third page</a></li>
+        </ul>
+    </div>
+</nav>

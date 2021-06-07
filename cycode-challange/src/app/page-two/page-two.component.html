@@ -1,0 +1,26 @@
+<div style="width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;">
+    
+    <div [@openCloseState]="openState" >
+        <button (click)="changeState()">Subscribe to our channel</button>
+        <br/>
+          <input type="number" id="value">
+          <button (click)="keyPress()"> filter</button>
+          <br/>
+        <mat-form-field style="background-color: aliceblue;" appearance="fill">
+            <mat-select>
+              <mat-option (click)="addChip(option)" *ngFor="let option of optionsToShow" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button (click)="onSubmit()">Submit</button>
+          <br/>
+          <mat-chip-list >
+            <mat-chip *ngFor="let chip of headerService.selectedNumbers">{{chip}}</mat-chip>
+          </mat-chip-list>
+    </div>
+</div>

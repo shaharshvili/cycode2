@@ -1,0 +1,32 @@
+li{
+    color: black;
+}
+.nav-parent{
+    display: flex;
+  justify-content: space-between;
+}
+.nav-child{
+    display: inline-flex;
+    margin-right:1.5em;
+}
+.row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.column {
+    display: table-cell;
+    text-align: center;
+}
+.logo{
+    height: 40px;
+    width: 150px;
+}
+.title{
+    left: 0;
+    right: 0;
+}
+a{
+    font-size: 50px;
+}
